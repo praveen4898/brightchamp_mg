@@ -19,25 +19,20 @@ const Instruction:React.FC = () => {
 
 
 <div style={{position: "relative"}}>
-<div style={{boxShadow:"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",position: "absolute", top: "0",left: "0",transform: "rotate(-5.62deg)"}}>
-<div style={{display:"flex",justifyContent:"center",alignItems:"center", height:"150px",width:"135px",margin:"5px", background: 'linear-gradient(to right, #FBA8C1 0%, #FBA8C1 54%, #FBA8C1 97%)',borderRadius:"10px"}}>
-<img src={apple} alt="apple" />
-</div>
-</div>
-
 <div style={{boxShadow:"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",position: "absolute", top: "0",left: "0"}}>
 <div style={{display:"flex",justifyContent:"center",alignItems:"center", height:"150px",width:"135px",margin:"5px", background: 'linear-gradient(to right, #FBA8C1 0%, #FBA8C1 54%, #FBA8C1 97%)',borderRadius:"10px"}}>
 <img src={apple} alt="apple" />
 </div>
 </div>
 
-
+<div style={{boxShadow:"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",position: "absolute", top: "0",left: "0",transform: "rotate(15.62deg)"}}>
+<div style={{display:"flex",justifyContent:"center",alignItems:"center", height:"150px",width:"135px",margin:"5px", background: 'linear-gradient(to right, #FBA8C1 0%, #FBA8C1 54%, #FBA8C1 97%)',borderRadius:"10px"}}>
+<img src={apple} alt="apple" />
+</div>
 </div>
 
 
-
-
-
+</div>
 
 
 <div style={{height:"50px",width:"200px",textAlign:"center",fontSize:"35px",color:"#11AEC6",fontWeight:"800"}}>
