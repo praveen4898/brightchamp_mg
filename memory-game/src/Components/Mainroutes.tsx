@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Introscreen from '../pages/Introscreen'
 import Instruction from '../pages/Instruction'
-import Activity from '../pages/Activity'
+import Activity from '../pages/activity'
 import Finalpage from '../pages/Finalpage'
 
 const Mainroutes:React.FC = () => {
