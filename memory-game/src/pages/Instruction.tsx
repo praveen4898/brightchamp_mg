@@ -1,9 +1,19 @@
 import React from 'react'
 import plainbg from '../images/plainbg.png'
 import blueheart from "../images/blueheart.png"
+import playbutton from "../images/playbutton.png"
 import apple from "../images/apple.png"
+import { useNavigate } from 'react-router-dom'
+
+
 
 const Instruction:React.FC = () => {
+const navigate=useNavigate()
+
+const handlePlay=()=>{
+navigate('/Activity')
+}
+
   return (
     <div style={{
         backgroundImage:`url(${plainbg})`,
@@ -76,6 +86,20 @@ const Instruction:React.FC = () => {
 
 
 
+
+
+
+<button onClick={handlePlay} style={{
+          backgroundColor: 'transparent',
+          border: 'none',
+          textDecoration: 'none',
+          position: 'absolute',
+          marginTop: '550px',
+          marginLeft: '450px',
+        }}>
+    <img           style={{ height: '100px', width: '250px' }}
+ src={playbutton} alt="" />
+</button>
 
     </div>
   )

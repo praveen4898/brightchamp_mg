@@ -6,8 +6,10 @@ import textbox1 from '../images/textbox1.png';
 import startbutton from '../images/start.png';
 import nextbutton from '../images/next.png';
 import yesbutton from '../images/yess.png';
+import { useNavigate } from 'react-router-dom';
 
 const Introscreen: React.FC = () => {
+  const navigate=useNavigate()
   const [textboxContent, setTextboxContent] = useState<string>('Welcome Kiddo !');
   const [buttonImage, setButtonImage] = useState<string>(startbutton);
   const [buttonText, setButtonText] = useState<string>('start');
@@ -22,6 +24,7 @@ const Introscreen: React.FC = () => {
       setButtonImage(yesbutton);
       setButtonText('yes');
     } else if (buttonText === 'yes') {
+     navigate( '/instruction')
     }
   };
 
@@ -29,12 +32,13 @@ const Introscreen: React.FC = () => {
     <div
       style={{
         backgroundImage: `url(${introbg})`,
+        backgroundRepeat: 'no-repeat',
         padding: '0',
         margin: '0 auto',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '100vh',
-        width: '1512px',
+        width: '1512px'
       }}
     >
       <img
