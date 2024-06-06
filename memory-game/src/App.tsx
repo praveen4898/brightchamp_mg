@@ -3,7 +3,6 @@ import React from 'react';
 import './App.css';
 import Introscreen from './pages/Introscreen';
 import Instruction from './pages/Instruction';
-import Activity from './pages/Activity';
 import Finalpage from './pages/Finalpage';
 import Mainroutes from './Components/Mainroutes';
 
