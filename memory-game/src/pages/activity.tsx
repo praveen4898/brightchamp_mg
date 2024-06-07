@@ -7,7 +7,9 @@ import grapes from '../images/grapes.png';
 import orange from '../images/orange.png';
 import pinkheart from '../images/pinkheart.png'
 import blueheart from '../images/blueheart.png'
+import next from '../images/next.png'
 import '../activity.css';
+import { useNavigate } from 'react-router-dom';
 
 interface Card {
   id: number;
@@ -35,6 +37,12 @@ const Activity: React.FC = () => {
   const [matchedCards, setMatchedCards] = useState<Card[]>([]);
   const [score, setScore] = useState(0);
   const [showMatchText, setShowMatchText] = useState(false);
+const navigate=useNavigate()
+
+const handleRewards=()=>{
+navigate('/Finalpage',{state:{score}})
+}
+
 
   useEffect(() => {
     const shuffledImages = shuffleArray(images);
@@ -111,7 +119,9 @@ const Activity: React.FC = () => {
         </div>
       </div>
       {showMatchText && <div className="match-text">It's a match!</div>}
-      {matchedCards.length === 12 && <div className="win-message">Congratulations! You won with a score of {score}!</div>}
+      {matchedCards.length === 12 && <div className="win-message"><img onClick={handleRewards} src={next} alt="nextbutton" /></div>}
+
+      
     </div>
   );
 };

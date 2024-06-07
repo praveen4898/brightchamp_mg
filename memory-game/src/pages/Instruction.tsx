@@ -28,17 +28,10 @@ navigate('/Activity')
 <div style={{borderRadius:"60px",marginTop:"180px",height:"338px",width:"351px",backgroundColor:"white",display:'flex',flexDirection:"column",justifyContent:"space-evenly",alignItems:"center"}}>
 
 
-<div style={{position: "relative"}}>
-<div style={{boxShadow:"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",position: "absolute", top: "0",left: "0"}}>
-<div style={{display:"flex",justifyContent:"center",alignItems:"center", height:"150px",width:"135px",margin:"5px", background: 'linear-gradient(to right, #FBA8C1 0%, #FBA8C1 54%, #FBA8C1 97%)',borderRadius:"10px"}}>
-<img src={apple} alt="apple" />
-</div>
-</div>
 
-<div style={{boxShadow:"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",position: "absolute", top: "0",left: "0",transform: "rotate(15.62deg)"}}>
-<div style={{display:"flex",justifyContent:"center",alignItems:"center", height:"150px",width:"135px",margin:"5px", background: 'linear-gradient(to right, #FBA8C1 0%, #FBA8C1 54%, #FBA8C1 97%)',borderRadius:"10px"}}>
+<div style={{boxShadow:"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", top: "0",left: "0"}}>
+<div style={{ height:"150px",width:"135px",margin:"5px", background: 'linear-gradient(to right, #FBA8C1 0%, #FBA8C1 54%, #FBA8C1 97%)',borderRadius:"10px"}}>
 <img src={apple} alt="apple" />
-</div>
 </div>
 
 
@@ -81,9 +74,27 @@ navigate('/Activity')
 
 
 {/* thirdcard */}
-
-<div style={{borderRadius:"60px",marginTop:"180px",height:"338px",width:"351px",backgroundColor:"white"}}></div>
-
+<div style={{ display: "flex", flexDirection: "column" }}>
+        <div style={{ borderRadius: "60px", marginTop: "180px", height: "338px", width: "351px", backgroundColor: "white", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <div style={{ display: "flex", justifyContent: "space-around", width: "100%" }}>
+            <div style={{ boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" }}>
+              <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "150px", width: "135px", margin: "5px", background: 'linear-gradient(#A2E3F3 0%, rgba(162, 227, 243, 0.29) 46%, #A2E3F3 100%)', borderRadius: "10px" }}>
+                <img src={blueheart} alt="blueheart" />
+              </div>
+            </div>
+            <div style={{ boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" }}>
+              <div style={{ height: "150px", width: "135px", margin: "5px", background: 'linear-gradient(to right, #FBA8C1 0%, #FBA8C1 54%, #FBA8C1 97%)', borderRadius: "10px" }}>
+                <img src={apple} alt="apple" />
+              </div>
+            </div>
+          </div>
+          <div style={{ height: "150px", width: "300px", textAlign: "center", fontSize: "18px", color: "#A6C930", fontWeight: "800", display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems: "center" }}>
+            <div>If they’re same</div>
+            <div style={{color:"#11AEC6",fontSize:"40px",fontWeight:"800"}}>Its a match !</div>
+            <div>otherwise retry</div>
+          </div>
+        </div>
+      </div>
 
 
 
@@ -106,3 +117,5 @@ navigate('/Activity')
 }
 
 export default Instruction
+
+

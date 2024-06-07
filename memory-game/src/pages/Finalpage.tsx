@@ -3,7 +3,11 @@ import plainbg from "../images/plainbg.png"
 import bananaicon from "../images/bananaicon.png"
 import monkey from "../images/monkey.png"
 import finalbutton from "../images/finalbutton.png"
+import { useLocation } from 'react-router-dom'
 const Finalpage:React.FC = () => {
+
+  const location=useLocation()
+  const {score}=location.state||{score:0}
   return (
 
 <div style={{height:"100vh",width:"100wh"}}>
@@ -29,7 +33,7 @@ const Finalpage:React.FC = () => {
     
     <div style={{height:"120px",width:"300px",borderRadius:"10px",backgroundColor:"#E26B1E",color:"#FFFFFF",transform:"rotate(-0.64deg)"}}>
   <h2 style={{fontWeight:"700"}}>Earned </h2>
-  <h1 style={{fontWeight:"800"}}> 7 Banana's</h1>
+  <h1 style={{fontWeight:"800"}}> {score} Banana's</h1>
     </div>
 
     <div style={{height:'300px',width:'400px',borderRadius:'40px',backgroundColor:"#FFF5D1"}}>
